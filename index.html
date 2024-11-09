@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="author" content="Eng. Million Meseret" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="display">
+            <input type="text" name="display" />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="display.value = ''" />
+            <input type="button" value="DE" onclick="del()" />
+            <input type="button" value="." onclick="appendValue(this)" />
+            <input type="button" value="/" onclick="appendValue(this)" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="appendValue(this)" />
+            <input type="button" value="8" onclick="appendValue(this)" />
+            <input type="button" value="9" onclick="appendValue(this)" />
+            <input type="button" value="*" onclick="appendValue(this)" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="appendValue(this)" />
+            <input type="button" value="5" onclick="appendValue(this)" />
+            <input type="button" value="6" onclick="appendValue(this)" />
+            <input type="button" value="-" onclick="appendValue(this)" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="appendValue(this)" />
+            <input type="button" value="2" onclick="appendValue(this)" />
+            <input type="button" value="3" onclick="appendValue(this)" />
+            <input type="button" value="+" onclick="appendValue(this)" />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="appendValue(this)" />
+            <input type="button" value="0" onclick="appendValue(this)" />
+            <input
+              type="button"
+              value="="
+              onclick="evaluateResult()"
+              class="equal"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
